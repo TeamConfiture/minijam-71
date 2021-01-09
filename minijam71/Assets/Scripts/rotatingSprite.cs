@@ -13,6 +13,6 @@ public class rotatingSprite : MonoBehaviour
     public Camera cam;
      
     void Update () {
-         transform.rotation = Quaternion.LookRotation(-cam.transform.forward);
+         transform.rotation = Quaternion.LookRotation(new Vector3(-cam.transform.forward.x,0.0f,-cam.transform.forward.z));
      }
 }
