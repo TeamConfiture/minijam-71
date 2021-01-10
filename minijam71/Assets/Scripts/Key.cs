@@ -19,6 +19,11 @@ public class Key : MonoBehaviour
         }
         else Debug.Log("Key is already picked up. are you sure you assigned keyNumber correctly?");
     } 
+
+    public bool GetKeyStatus()
+    {
+        return isInInventory;
+    }
     // Start is called before the first frame update
     void Start()
     {

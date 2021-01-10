@@ -8,24 +8,17 @@ public class GameManager : MonoBehaviour
 {
     #region atributes
     private static GameManager instance;
+    
     ///Contain all nodes of story to keep track of player progression
-    [SerializeField] private Key[] KeysStatus;
+    [SerializeField] private Key[] KeysStats;
     #endregion
 
     private void Awake() {
         instance = this;
         DontDestroyOnLoad(this.gameObject);
     }
-    
-    // Start is called before the first frame update
-    void Start()
+    public bool KeyStatus(int key)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        return KeysStats[key].GetKeyStatus();   
     }
 }
