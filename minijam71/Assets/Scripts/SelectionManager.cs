@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using cakeslice;
+
 
 ///<summary>created with https://www.youtube.com/watch?v=_yf5vzZ2sYE</summary>
 public class SelectionManager : MonoBehaviour
@@ -20,8 +22,8 @@ public class SelectionManager : MonoBehaviour
     {
         if (_selection != null)
         {
-            var selectionOutline = _selection.GetComponent<Outline>();
-            selectionOutline.OutlineWidth = 0f;
+            var selectionOutline = _selection.GetComponentInChildren<Outline>();
+            selectionOutline.color = 0;
             _selection = null;
         }
 
@@ -30,13 +32,14 @@ public class SelectionManager : MonoBehaviour
         
         if (Physics.Raycast(ray, out hit, 5))
         {
+
             //3D Model must have Selectable Tag !!!
             if (hit.transform.CompareTag(selectableTag))
             {
                 var selection = hit.transform.parent;
 
-                var selectionOutline = selection.GetComponent<Outline>();
-                selectionOutline.OutlineWidth = 7f;
+                var selectionOutline = selection.GetComponentInChildren<Outline>();
+                selectionOutline.color = 1;
                     
                 if (Input.GetMouseButtonDown(0))
                 {
