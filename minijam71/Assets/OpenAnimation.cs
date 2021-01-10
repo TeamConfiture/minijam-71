@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class OpenAnimation : MonoBehaviour
 {
+    [SerializeField] private bool isLeft = false;
     private bool opened = false;
     private bool opening = false;
     private float ratio = 5f;
@@ -11,10 +12,18 @@ public class OpenAnimation : MonoBehaviour
     Vector3 from;
     Vector3 to;
 
-    void start()
+    void Start()
     {
-        from = transform.position;
-        to = from + new Vector3(3f,0f,0f);
+        from = transform.localPosition;
+        if (!isLeft)
+        {
+            to = from + new Vector3(3f,0f,0f);
+        }
+        else 
+        {
+            to = from - new Vector3(3f,0f,0f);
+        }
+        
     }
 
 
@@ -33,7 +42,7 @@ public class OpenAnimation : MonoBehaviour
                 if(lerpValue < 1 )
                 {
                     lerpValue += Time.deltaTime / ratio;
-                    transform.position = Vector3.Lerp(from, to, lerpValue);
+                    transform.localPosition = Vector3.Lerp(from, to, lerpValue);
                 }
                 
             }
