@@ -264,6 +264,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43efbdf536404694f82fa536b84356e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Canvas: {fileID: 0}
   MainMenu: {fileID: 1612681997}
   CreditsMenu: {fileID: 1185198641}
   soundEffect: {fileID: 1579319715}
@@ -508,6 +509,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43efbdf536404694f82fa536b84356e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Canvas: {fileID: 0}
   MainMenu: {fileID: 1612681997}
   CreditsMenu: {fileID: 1185198641}
   soundEffect: {fileID: 1579319715}
@@ -746,6 +748,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43efbdf536404694f82fa536b84356e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Canvas: {fileID: 0}
   MainMenu: {fileID: 1612681997}
   CreditsMenu: {fileID: 1185198641}
   soundEffect: {fileID: 1579319715}
@@ -877,6 +880,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43efbdf536404694f82fa536b84356e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Canvas: {fileID: 0}
   MainMenu: {fileID: 1612681997}
   CreditsMenu: {fileID: 1185198641}
   soundEffect: {fileID: 1579319715}
@@ -1192,6 +1196,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43efbdf536404694f82fa536b84356e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Canvas: {fileID: 1640388038}
   MainMenu: {fileID: 1612681997}
   CreditsMenu: {fileID: 1185198641}
   soundEffect: {fileID: 1579319715}
@@ -1771,6 +1776,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43efbdf536404694f82fa536b84356e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Canvas: {fileID: 1640388038}
   MainMenu: {fileID: 1612681997}
   CreditsMenu: {fileID: 1185198641}
   soundEffect: {fileID: 1579319715}

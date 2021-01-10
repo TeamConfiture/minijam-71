@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MainMenuScript : MonoBehaviour
 {
+    public GameObject Canvas;
     public GameObject MainMenu;
     public GameObject CreditsMenu;
 
@@ -16,7 +17,8 @@ public class MainMenuScript : MonoBehaviour
 
     public void PlayNowButton(string scene)
     {
-        // UnityEngine.SceneManagement.SceneManager.LoadScene(scene);
+        UnityEngine.SceneManagement.SceneManager.LoadScene(scene);
+        Canvas.SetActive(false);
         soundEffect.Play();
     }
     public void CreditsButton()
