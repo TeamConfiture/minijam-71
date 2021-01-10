@@ -1,6 +1,16 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+<<<<<<< HEAD:minijam71/Assets/Prefabs/DoubleDoors.prefab.meta
 guid: 7c344a2512bf63a47b2e40c30728ae4b
 PrefabImporter:
+=======
+guid: 5beb1bb217930cc418062cca4bc827ec
+DefaultImporter:
+>>>>>>> d9773e8d65b6cfcb9aa1fa215a8eb2a4f956313f:minijam71/Assets/Standard Assets/Outline-Effect-master/Samples~/Demo/StressTest.unity.meta
+=======
+guid: 7c344a2512bf63a47b2e40c30728ae4b
+PrefabImporter:
+>>>>>>> d9773e8d65b6cfcb9aa1fa215a8eb2a4f956313f
   externalObjects: {}
   userData: 
   assetBundleName: 
