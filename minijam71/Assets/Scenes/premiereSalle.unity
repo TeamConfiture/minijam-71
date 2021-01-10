@@ -6660,6 +6660,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: FPSController Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 4400757543858511034, guid: 915380f844fc391479fad20448c83c61,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 915380f844fc391479fad20448c83c61, type: 3}
 --- !u!1001 &1629577512

@@ -18,6 +18,11 @@ public class LastTrial : MonoBehaviour
     [SerializeField] TMP_Text tmp;
     [SerializeField] public InputField inpF;
 
+    public Text proposition;
+    
+
+    string answer = "423";
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,7 +34,10 @@ public class LastTrial : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Debug.Log("Current Scene : Final Trial");
+        if(Input.GetKeyDown("enter")){
+            SubmitAnswer();
+        }
+            
     }
 
     public void HandleClick()
@@ -79,11 +87,14 @@ public class LastTrial : MonoBehaviour
 
         }
 
-        string answer = "";
+
         
         // get the player's answer and assign it to answer
 
-        if (answer == "423")
+        
+    }
+    public void SubmitAnswer(){
+        if (answer.Equals(proposition.text))
         {
             // open door
             Debug.Log("GG WP, you saved the rabbits");
@@ -91,7 +102,7 @@ public class LastTrial : MonoBehaviour
 
         else
         {
-            Debug.Log("GG WP, you saved the rabbits");
+            Debug.Log("Nope");
         }
 
 
