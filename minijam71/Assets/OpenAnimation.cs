@@ -44,6 +44,11 @@ public class OpenAnimation : MonoBehaviour
                     lerpValue += Time.deltaTime / ratio;
                     transform.localPosition = Vector3.Lerp(from, to, lerpValue);
                 }
+                if(transform.localPosition == to)
+                {
+                    opening = false;
+                    transform.gameObject.SetActive(false);
+                }
                 
             }
             

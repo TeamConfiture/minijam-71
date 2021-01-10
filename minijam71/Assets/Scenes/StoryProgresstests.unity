@@ -507,47 +507,6 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1344544569214229739}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &224596307 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1344544567210219726, guid: 915380f844fc391479fad20448c83c61,
-    type: 3}
-  m_PrefabInstance: {fileID: 1344544569214229739}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &224596311
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 224596307}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a78da3f00f3328541b4526c0b0b5ec5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lineThickness: 1.88
-  lineIntensity: 1.82
-  fillAmount: 0.2
-  lineColor0: {r: 1, g: 1, b: 1, a: 0}
-  lineColor1: {r: 0, g: 0, b: 0, a: 1}
-  lineColor2: {r: 1, g: 1, b: 1, a: 0}
-  additiveRendering: 0
-  backfaceCulling: 1
-  fillTexture: {fileID: 0}
-  fillTextureScale: {x: 1, y: 1}
-  useFillColor: 0
-  fillColor: {r: 0, g: 0, b: 1, a: 1}
-  cornerOutlines: 0
-  addLinesBetweenColors: 0
-  scaleWithScreenSize: 1
-  alphaCutoff: 0.5
-  flipY: 0
-  sourceCamera: {fileID: 1113921293}
-  autoEnableOutlines: 0
-  outlineCamera: {fileID: 0}
-  outlineShaderMaterial: {fileID: 0}
-  renderTexture: {fileID: 0}
-  extraRenderTexture: {fileID: 0}
 --- !u!1 &382397028
 GameObject:
   m_ObjectHideFlags: 0
