@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.Characters.FirstPerson;
@@ -31,15 +31,15 @@ public class GameManager : MonoBehaviour
     }
 
     void Update(){
-        
+
         if(Input.GetKeyDown(KeyCode.Escape) && !isPaused){
             PauseMain();
-            isPaused = !isPaused;
+            isPaused = true;
         }
 
         if(Input.GetMouseButtonDown(0) && isPaused){
             UnpauseMain();
-            isPaused = !isPaused;
+            isPaused = false;
         }
     }
 

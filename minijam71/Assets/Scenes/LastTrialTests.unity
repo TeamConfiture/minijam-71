@@ -284,7 +284,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20716910bfca7054d8172f7d229005ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  KeysStatus: []
+  KeysStats: []
   selectManag: {fileID: 163732966}
   exit: {fileID: 1787525910}
   player: {fileID: 1600114197}
@@ -701,6 +701,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8031105086928062443, guid: 915380f844fc391479fad20448c83c61,
+        type: 3}
+      propertyPath: m_CharacterLimit
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 915380f844fc391479fad20448c83c61, type: 3}
