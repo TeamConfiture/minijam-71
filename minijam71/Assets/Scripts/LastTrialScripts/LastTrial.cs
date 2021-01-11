@@ -98,6 +98,7 @@ public class LastTrial : MonoBehaviour
         {
             // open door
             Debug.Log("GG WP, you saved the rabbits");
+            UnityEngine.SceneManagement.SceneManager.LoadScene("rotatingSpriteScene");
         }
 
         else
