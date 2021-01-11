@@ -9,8 +9,9 @@ public class GameManager : MonoBehaviour
 {
     #region atributes
     private static GameManager instance;
+    
     ///Contain all nodes of story to keep track of player progression
-    [SerializeField] private Key[] KeysStatus;
+    [SerializeField] private Key[] KeysStats;
     [SerializeField] GameObject selectManag;
 
     [SerializeField] GameObject exit;
@@ -23,16 +24,14 @@ public class GameManager : MonoBehaviour
         instance = this;
         DontDestroyOnLoad(this.gameObject);
     }
-    
-    // Start is called before the first frame update
-    void Start()
+    public bool KeyStatus(int key)
     {
-        
+
+        return KeysStats[key].GetKeyStatus();   
     }
 
-    // Update is called once per frame
-    void Update()
-    {
+    void Update(){
+        
         if(Input.GetKeyDown(KeyCode.Escape) && !isPaused){
             PauseMain();
             isPaused = !isPaused;
